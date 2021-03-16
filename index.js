@@ -177,81 +177,36 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-// const computer = Math.random() ;
-// function game(user, computer){
 
-//   if (computer <= 0.34) {
-//     computer = "rock";
-//   }
-//   else if (computer <= .67) {
-//     computer = "scissors";
-//   }
-//   else{
-//     computer = "paper";
-//   }
-//   // logic
-//   if (user === computer) {
-//     return("it's a tie");
-//   }
-//   else if(user === 'rock' && computer === 'scissors'){
-//     return("you win!");
-//   }
-//   else if(user === 'paper' && computer === 'rock'){
-//     return("you win!");
-//   }
-//   else if(user === 'scissors' && computer === 'paper'){
-//     return "you win!" ;
-//   }
-
-// }
-// game("rock", computer);
-
-  // logic
-  const computer = Math.random() ;
+ let computer = Math.random() ;
+ if(computer <=0.34){
+   computer = "rock";
+ }
+  else if (computer <= 0.67){
+    computer = "paper";
+ }
+ else if(computer > 0.67)
+  {
+    computer ="scissors";
+  }
+  console.log("task4 : " + computer);
   function game(user, computer){
   if (user === computer) {
-    console.log("user is :"+ user);
-    console.log("computer is :"+ computer);
-    return("it's a tie");
-  }
-
-  if (user === "scissors") { //user gets scissors
-    if (computer === "rock") {   
-      console.log("you lose");
+      return("it's a tie");
+    }
+    else if(user === "rock" && computer === "scissors"){
+      return("you win!");
+    }
+    else if(user === "paper" && computer === "rock"){
+      return("you win!");
+    }
+    else if(user === "scissors" && computer === "paper"){
+      return("you win!");
+    }
+    else{
       return("you lose!");
     }
-    else{
-      if (computer === "paper")
-        console.log("you win");
-        return("you win!");
-      }
-  }
-
-  if(user === "paper"){//user gets paper
-    if(computer === "rock"){
-       console.log("you win");
-       return("you win!");
-    }
-    else{
-      if(computer === "scissors")
-       console.log("you lose");
-       return("you lose!");
-    }
-  }
-      if(user ==="rock"){//user gets rock
-       if(computer === "scissors"){
-          console.log("you win!");
-          return("you win!")
-       }
-       else{
-         if(computer=== "paper")
-          console.log("you lose");
-         return("you lose!")
-       }
-     }
-  
-    
-   }
+}
   
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
